@@ -5,6 +5,7 @@
 	top: 0;
 	left: 0;
 	background-color: rgba(0,0,0,.5);
+	display: none;
 }
 
 .modal-content {
@@ -14,4 +15,24 @@
 	top: 50%;
 	left: 50%;
 	margin: -50px 0 0 -250px;
+	border-radius: 6px;
+	box-shadow: 0 0 16px 0 rgba(0,0,0, .4);
+}
+
+.modal-title {
+	font-size: 24px;
+	font-weight: 600;
+	padding: 8px 32px 0 8px;
+}
+
+.modal-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 8px;
+	cursor: pointer;
+}
+
+.modal-body {
+	padding: 4px 16px 16px 16px;
 }

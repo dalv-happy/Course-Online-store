@@ -9,21 +9,33 @@
 	</head>
 	<body>
 		<header id="navigation-bar">
-			<nav style="float: left;">
+			<nav class="navbar-left">
 				<ul>
 					<li>
 						<a href="#">Главная</a>
 					</li>
 					<li>Каталог товаров</li>
 					<li>О нас</li>
+					<li id="regModalButton">
+						<a href="#">Регистрация</a>
+					</li>
+					<li id="authModalButton">
+						<a href="#">Войти</a>
+					</li>
 					<li>
 						<a href="https://github.com/perec200/Course-Online-store" target="_blank">Репозиторий Влада</a>
 					</li>
 				</ul>
 			</nav>
-			<div style="float: right;"> 
-				<input style="margin-top: 25px;" placeholder="Поиск...">
-				<input type="submit">
+			<div class="navbar-right">
+				<div class="form-search">
+					<input class="text-search"placeholder="Поиск...">
+					<input class="button-search" type="submit" value=" ">
+				</div>
+				<div>
+					<img class="icon-cart" width="30px" src="img/cart.png">
+					<span>Корзина (0)</span>
+				</div>
 			</div>
 		</header>
 
@@ -42,15 +54,46 @@
 				<br>
 				<input type="submit" value="Завершить регистрацию">
 			</form>
+			<span id="helloModalButton">Открыть модальное окно</span>
 		</main>
 
 		<footer>		
 		</footer>
 
-		<!--<div class="modal">
+		<div class="modal" id="helloModal">
 			<div class="modal-content">
-				Привет мир!
+				<div class="modal-title">Окно приветствия</div>
+				<div class="modal-close">X</div>
+				<hr>
+				<div class="modal-body">
+					Приве́тствие — жест, слово, словосочетание, письменное послание (и их совмещение) или иной ритуал для вступления в контакт человека (группы людей) с другим человеком (с группой людей).	
+				</div>
 			</div>
-		</div>-->
+		</div>
+
+		<div class="modal" id="regModal">
+			<div class="modal-content">
+				<div class="modal-title">Форма регистрации</div>
+				<div class="modal-close">X</div>
+				<hr>
+				<div class="modal-body">
+					<form id="form-sign-in" action="/reg.php" method="post">
+						<label>Имя:</label><br>
+						<input type="text" class="form-input" name="first-name" placeholder="Имя">
+						<br>
+
+						<label>Логин:</label><br>
+						<input type="text" class="form-input" name="login" placeholder="Логин"><br>
+
+						<label>Пароль:</label><br>
+						<input type="password" class="form-input" name="password" placeholder="Пароль">
+
+						<br>
+						<input class="form-submit submit-success" type="submit" value="Завершить регистрацию">
+					</form>	
+				</div>
+			</div>
+		</div>
 	</body>
+	<script type="text/javascript" src="js/modal.js"></script>
 </html>
