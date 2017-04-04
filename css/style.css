@@ -4,22 +4,56 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+/*Меню - начало*/
 #navigation-bar {
 	width: 100%;
 	height: 80px;
 	background-color: white;
-	-webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.14);
-    -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.14);
-    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.14);
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.4);
+	position: relative;
+	z-index: 5;
 }
 
+#navigation-bar nav, #navigation-bar ul {
+	height: 100%;
+}
+
+#navigation-bar ul li {
+	display: inline-block;
+	padding-right: 8px;
+	padding-left: 8px;
+	font-size: 16px;
+	line-height: 1;
+	padding-top: 32px;
+	height: calc(100% - 32px);
+	transition: all .2s ease-in-out;	
+	cursor: pointer;
+	margin-right: -4px;
+}
+#navigation-bar ul li:hover {
+	background-color: gray;
+}	
+#navigation-bar ul li:hover a {
+	color: white;
+}
+
+#navigation-bar ul li a {
+	color: #F4B400;
+	text-decoration: none;
+}
+/*Меню - конец*/
+
+/*Контент - начало*/
 #wrap-content {
 	width: 1100px;
 	background-color: white;
 	margin: 0 auto;
-	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.17);
+	box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
 	overflow: hidden;
 	word-wrap: break-word;
+	z-index: 1;
 }
 
 #form-sign-in {
@@ -30,9 +64,12 @@ body {
     margin: 25px;
     padding: 8px;
 }
+/*Контент - конец*/
 
+/*Footer - начало*/
 FOOTER {
 	min-height: 248px;
 	width: 100%;
 	background-color: #191919;
 }
+/*Footer - конец*/
