@@ -1,0 +1,22 @@
+.btn {
+	padding: 10px 12px;
+	border-radius: 4px;
+	line-height: 1;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	font-weight: 600;
+	transition: all .5s ease-in-out;
+}
+
+.success-btn, .success-btn-out:hover {
+	background-color: #0277bd;
+	border: 1px solid #0277bd;
+	color: white;	
+}
+
+.success-btn-out, .success-btn:hover {
+	border: 1px solid #0277bd;
+	background-color: white;
+	color: #0277bd;
+}

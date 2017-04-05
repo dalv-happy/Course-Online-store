@@ -4,7 +4,6 @@
 		<title>Page Title</title>
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css"> 
-		<link rel="stylesheet" href="css/modal.css"> 
 		<meta charset="utf-8">
 	</head>
 	<body>
@@ -39,25 +38,152 @@
 			</div>
 		</header>
 
+
 		<main id="wrap-content">
-			<form id="form-sign-in" action="/reg.php" method="post">
-				<label>Имя:</label><br>
-				<input type="text" name="first-name" placeholder="Имя">
-				<br>
+			<div class="main-slider">
+				<div class="wrap-slide">
+					<div class="block-slide" style="background-color: black;"></div>
+					<div class="block-slide" style="background-color: blue;"></div>
+				</div>				
 
-				<label>Логин:</label><br>
-				<input type="text" name="login" placeholder="Логин"><br>
+				<div class="slider-pages"></div>
+			</div>
 
-				<label>Пароль:</label><br>
-				<input type="password" name="password" placeholder="Пароль">
+			
+			<div class="short-list-products">
+				<h2>Популярные товары</h2>
+				<div class="block-product">
+					<div class="product-info">
+						<p class="product-name">iPhone 7 Plus Red 64GB</p>
+						<p class="product-price">Цена: 57 000 P</p>
+					</div>
+					<img src="img/product/1.jpg" class="photo-product">
+					<div class="group-button-product">
+						<button class="btn success-btn">Купить</button>
+						<button class="btn success-btn-out">В корзину</button>
+					</div>
+				</div>
 
-				<br>
-				<input type="submit" value="Завершить регистрацию">
-			</form>
-			<span id="helloModalButton">Открыть модальное окно</span>
+				<div class="block-product">
+					<div class="product-info">
+						<p class="product-name">iPhone 7 Plus Red 64GB</p>
+						<p class="product-price">Цена: 57 000 P</p>
+					</div>
+					<img src="img/product/1.jpg" class="photo-product">
+					<div class="group-button-product">
+						<button class="btn success-btn">Купить</button>
+						<button class="btn success-btn-out">В корзину</button>
+					</div>
+				</div>
+
+				<div class="block-product">
+					<div class="product-info">
+						<p class="product-name">iPhone 7 Plus Red 64GB</p>
+						<p class="product-price">Цена: 57 000 P</p>
+					</div>
+					<img src="img/product/1.jpg" class="photo-product">
+					<div class="group-button-product">
+						<button class="btn success-btn">Купить</button>
+						<button class="btn success-btn-out">В корзину</button>
+					</div>
+				</div>
+
+				<div class="block-product">
+					<div class="product-info">
+						<p class="product-name">iPhone 7 Plus Red 64GB</p>
+						<p class="product-price">Цена: 57 000 P</p>
+					</div>
+					<img src="img/product/1.jpg" class="photo-product">
+					<div class="group-button-product">
+						<button class="btn success-btn">Купить</button>
+						<button class="btn success-btn-out">В корзину</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="short-list-products">
+				<h2>Новые товары</h2>
+				<div class="block-product">
+					<div class="product-info">
+						<p class="product-name">iPhone 7 Plus Red 64GB</p>
+						<p class="product-price">Цена: 57 000 P</p>
+					</div>
+					<img src="img/product/1.jpg" class="photo-product">
+					<div class="group-button-product">
+						<button class="btn success-btn">Купить</button>
+						<button class="btn success-btn-out">В корзину</button>
+					</div>
+				</div>
+
+				<div class="block-product">
+					<div class="product-info">
+						<p class="product-name">iPhone 7 Plus Red 64GB</p>
+						<p class="product-price">Цена: 57 000 P</p>
+					</div>
+					<img src="img/product/1.jpg" class="photo-product">
+					<div class="group-button-product">
+						<button class="btn success-btn">Купить</button>
+						<button class="btn success-btn-out">В корзину</button>
+					</div>
+				</div>
+
+				<div class="block-product">
+					<div class="product-info">
+						<p class="product-name">iPhone 7 Plus Red 64GB</p>
+						<p class="product-price">Цена: 57 000 P</p>
+					</div>
+					<img src="img/product/1.jpg" class="photo-product">
+					<div class="group-button-product">
+						<button class="btn success-btn">Купить</button>
+						<button class="btn success-btn-out">В корзину</button>
+					</div>
+				</div>
+
+				<div class="block-product">
+					<div class="product-info">
+						<p class="product-name">iPhone 7 Plus Red 64GB</p>
+						<p class="product-price">Цена: 57 000 P</p>
+					</div>
+					<img src="img/product/1.jpg" class="photo-product">
+					<div class="group-button-product">
+						<button class="btn success-btn">Купить</button>
+						<button class="btn success-btn-out">В корзину</button>
+					</div>
+				</div>
+			</div>
 		</main>
 
-		<footer>		
+		<footer>
+			<div class="content">
+				<div class="footer-information">
+					<div>
+						<h2>Навигация</h2>
+						<div class="information-block">
+							<ul>
+								<li>Главная</li>
+								<li>Каталог товаров</li>
+								<li>О нас</li>
+							</ul>
+						</div>						
+					</div>
+					<div>
+						<h2>Контакты</h2>
+						<div class="information-block">
+							<ul>
+								<li>8 800 554 35 35</li>
+								<li>8 800 554 35 36</li>
+								<li>Россия, г. Ульяновск, ул. Ленина, д.119</li>
+							</ul>
+						</div>
+					</div>
+					<div>
+						<h2>О нас</h2>
+						<div class="information-block">
+							<p>Информация о сайте, чем мы занимаемся.</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</footer>
 
 		<div class="modal" id="helloModal">
