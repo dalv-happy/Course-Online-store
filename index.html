@@ -4,6 +4,7 @@
 		<title>Page Title</title>
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/slider.css">
 		<meta charset="utf-8">
 	</head>
 	<body>
@@ -40,13 +41,20 @@
 
 
 		<main id="wrap-content">
-			<div class="main-slider">
+			<div class="main-slider" id="store-shares">
 				<div class="wrap-slide">
-					<img src="/img/slider/1.jpg" class="show-slide">
+					<img src="/img/slider/1.jpg">
+					<div class="overlay-slide"></div>
 					<div class="slide-text">
-						<h1>Старт продаж iPhone 7 Plus 64GB</h1>
+						<h1>
+							Старт продаж iPhone 7 Plus 64GB
+							<small>Новинка</small>
+						</h1>
 						<p>Познакомьтесь с iPhone — самым мощным персональным устройством в мире.</p>
-					</div>					
+					</div>	
+					<ul class="slider-page">
+						<li class="active"></li>
+					</ul>				
 				</div>				
 
 				<div class="slider-pages"></div>
@@ -224,5 +232,7 @@
 			</div>
 		</div>
 	</body>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/modal.js"></script>
+	<script type="text/javascript" src="js/slider.js"></script>
 </html>

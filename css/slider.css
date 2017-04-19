@@ -15,11 +15,66 @@
 	height: 100%;
 	object-fit: cover;
 }
-.slide-text {
+.overlay-slide {
+	width: 100%;
+	height: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
+	opacity: .35;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ee0b77+0,ff6901+100 */
+	background: #ee0b77; /* Old browsers */
+	background: -moz-linear-gradient(top, #ee0b77 0%, #ff6901 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #ee0b77 0%,#ff6901 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #ee0b77 0%,#ff6901 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee0b77', endColorstr='#ff6901',GradientType=0 ); /* IE6-9 */
+}
+.slide-text {
+	position: absolute;
+	top: 15px;
+	left: 32px;
 	color: white;
+	max-width: 573px;
+}
+
+.slide-text h1 {
+	font-weight: 700;
+	font-size: 30px;
+}
+.slide-text h1 small {
+	border: 1px solid #fff;
+	font-weight: 300;
+	font-size: 15px;
+	padding: 5px 8px;
+	border-radius: 3px;
+	vertical-align: middle;
+}
+.slide-text p {
+	font-weight: 300;
+	font-size: 15px;
+	margin-top: 16px;
+}
+
+.slider-page {
+	position: absolute;
+	bottom: 16px;
+	left: 50%;
+	transition: all .8s ease-in-out;
+}
+.slider-page li {
+	text-decoration: none;
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: white;
+	cursor: pointer;
+	margin-right: 8px;
+}
+.slider-page .active {
+	width: 12px;
+	height: 12px;
+	opacity: .5;
 }
 
 .block-slide {

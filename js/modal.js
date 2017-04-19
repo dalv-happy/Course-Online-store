@@ -1,4 +1,4 @@
-window.onload = function() {
+/*window.onload = function() {
     var block = document.getElementById('helloModalButton');
     var modal = document.getElementById('helloModal');
     var close = document.getElementsByClassName('modal-close');
@@ -23,4 +23,4 @@ window.onload = function() {
     close[1].onclick = function() {
         regModal.style.display = 'none';
     }; 
-};
+};*/
