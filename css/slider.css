@@ -8,6 +8,18 @@
 .wrap-slide {
 	width: 100%;
 	height: 100%;
+	position: relative;
+}
+.wrap-slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.slide-text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: white;
 }
 
 .block-slide {
